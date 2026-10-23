@@ -1,0 +1,22 @@
+USER INPUT
+[User Query]
+     |
+     v
+ORCHESTRATION
+[AI Agent] ---> [Decompose into Sub-Queries]
+     |                 |
+     |                 v
+RETRIEVAL
+     |          [Supabase Vector DB] (Parallel Retrieval)
+     |                 |
+     |                 v
+FILTERING
+     |          [Filter: Score > 0.4]
+     |                 |
+     v                 v
+REASONING
+[Think Tool] <--- [Aggregate Valid Context]
+     |
+     v
+FINAL OUTPUT
+[Synthesized Response]

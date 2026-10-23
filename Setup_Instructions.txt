@@ -1,0 +1,9 @@
+Setup and Deployment Instructions
+
+1. Import the Workflow: Import Advanced_Multi_Query_RAG_Agent.json into your n8n workspace.
+2. Credentials Setup: 
+   a. Connect your OpenAI API Key to the OpenAI Chat Model and Embeddings OpenAI nodes.
+   b. Connect your Supabase API Key and URL to the Supabase Vector Store node.
+3. Sub-Workflow Configuration: 
+   a. In the Query knowledge base tool node, link the corresponding sub-workflow ID where your data is processed.
+4. Prompt Tuning: Edit the AI Agent system prompt to specify your exact domain (e.g. HR Policies, Engineering Docs).
